@@ -15,4 +15,13 @@ some practice about learning shell script .
 # 执行脚本方式
 + ./shellfile(相对路径) || 绝对路径
 + sh shellfile(这种情况下执行shell脚本,脚本本身可以不具备x权限)
-+ source shellfile || . shellfile(这种情况下执行shell脚本,可以把脚本内的变量加载为shell变量.举个栗子:b.sh想要引用a.sh中的shell变量,由于a.sh的shell变量的域只存在于a.sh当中,b.sh理应无法读取.此时可以在b.sh中执行source a.sh将a.sh的变量加载为b.sh的变量)
++ source shellfile || . shellfile(举个栗子:b.sh想要引用a.sh中的shell变量,由于a.sh的shell变量的域只存在于a.sh当中,b.sh理应无法读取.此时可以在b.sh中执行source a.sh将a.sh的变量加载为b.sh的变量)
+
+# 编写shell文件的规范
++ 指定使用哪一个shell作为解释器
++ 添加版本等注释
+`在~/.vimrc中配置,懒人必备`
+```
+在~/.vimrc中配置,懒人必备
+```
+
