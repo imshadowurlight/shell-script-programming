@@ -11,6 +11,12 @@ some practice about learning shell script .
 
 # 除了环境变量以外,shell还会加载shell变量
 + 用户执行shell文件时指定的参数$1,$2,$3...$*,$@,$?,etc
++ `$? 返回值`
++ `$n 第几个参数`
++ `$# 参数的个数`
++ `$$ 当前shell的进程号`
++ shift删除参数数据第一个元素(请参考类比js数组)
++ pop删除参数数组最后一个元素(请参考类比js数组)
 
 # 执行脚本方式
 + ./shellfile(相对路径) || 绝对路径
@@ -20,8 +26,12 @@ some practice about learning shell script .
 # 编写shell文件的规范
 + 指定使用哪一个shell作为解释器
 + 添加版本等注释
-`在~/.vimrc中配置,懒人必备`
-```
-在~/.vimrc中配置,懒人必备
-```
++ `在~/.vimrc中配置,懒人必备`
+
+# 引号的问题
++ " "保留命令,变量特殊字符etc
++ ' '原样输出,使变量特殊字符etc失去意义
++ 没有引号默认为" "
++ 举个例子,见c.sh
+
 
